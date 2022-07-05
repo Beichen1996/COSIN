@@ -18,3 +18,5 @@ python extract.py --dataset=cifar10 --data_dir='../../data/cifar10' --gpu=0 --pr
 
 --data_dir is the path to the location of dataset, --dataset is the name of the dataset (such as cifar10, cifar100, cinic10, etc.), --gpu is the gpu device used, --pretrained is the path to the pretrained model, --pretrained should be corresponding to the --data_dir and --dataset. The extracted feature is saved in this folder with {dataset name}+"feature.pt".
 
+We have saved the extracted features in folder "cross-client-contrastive/feature_extraction/".
+
