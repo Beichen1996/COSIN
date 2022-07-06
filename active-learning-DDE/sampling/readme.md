@@ -2,10 +2,10 @@
 In this stage, DDE selects the most representative samples for AL sampling.
 
 ## Requirement
-python >= 3.8
-torch == 1.8.1
-numpy == 1.19.2
-pillow == 8.0.1
+python >= 3.8  
+torch == 1.8.1  
+numpy == 1.19.2  
+pillow == 8.0.1  
 
 
 ## Scripts
