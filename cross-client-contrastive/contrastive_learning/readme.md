@@ -1,5 +1,5 @@
 ## Cross-client contrastive learning
-
+In this step, you can train the encoder via our cross-client contrastive learning method.
 
 
 ## Requirement
