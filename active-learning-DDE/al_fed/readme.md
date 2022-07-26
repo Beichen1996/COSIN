@@ -17,7 +17,7 @@ pillow == 8.0.1
 Extract features:
 ``` 
 cd  active-learning-DDE/al_fed
-python main.py --dataset=cifar10 --data_dir=../../data/cifar10 --sample_dir=./cifar10 --gpu=0 --partition_method=homo 
+python main.py --dataset=cifar10 --data_dir=../../data/cifar10 --sample_dir=./cifar_10 --gpu=0 --partition_method=homo 
 ``` 
 
 --data_dir is the path to the location of dataset, --dataset is the name of the dataset (such as cifar10, cifar100, cinic10, etc.), --gpu is the gpu device used, --sample_dir is the path to the sampling results that are used to reproduce performances, --partition_method is the split strategy(homo means iid split, hetero means non-iid split).  

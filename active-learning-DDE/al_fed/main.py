@@ -6,13 +6,10 @@ import sys
 
 import numpy as np
 import torch
-import wandb
 
 
 from fedavg.fedavg_api import FedAvgAPI
 from fedavg.my_model_trainer_classification import MyModelTrainer as MyModelTrainerCLS
-from fedavg.my_model_trainer_nwp import MyModelTrainer as MyModelTrainerNWP
-from fedavg.my_model_trainer_tag_prediction import MyModelTrainer as MyModelTrainerTAG
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../")))
 
@@ -161,12 +158,6 @@ if __name__ == "__main__":
     logger.info(args)
     device = torch.device("cuda:" + str(args.gpu) if torch.cuda.is_available() else "cpu")
     logger.info(device)
-
-    wandb.init(
-        project="fedml",
-        name="FedAVG-r" + str(args.comm_round) + "-e" + str(args.epochs) + "-lr" + str(args.lr),
-        config=args
-    )
 
     # Set the random seed. The np.random seed determines the dataset partition.
     # The torch_manual_seed determines the initial weight.
